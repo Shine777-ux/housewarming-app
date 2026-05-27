@@ -5,10 +5,19 @@ import RSVPForm from "@/components/RSVPForm";
 import Guestbook from "@/components/Guestbook";
 import CalendarIntegration from "@/components/CalendarIntegration";
 
-export default function Home() {
+interface PageProps {
+  params: {
+    name: string;
+  };
+}
+
+export default async function InvitePage({ params }: PageProps) {
+  // Decode URL encoded names (e.g., John%20Doe -> John Doe)
+  const name = decodeURIComponent(params.name);
+
   return (
     <main className="min-h-screen">
-      <HeroSection />
+      <HeroSection name={name} />
       
       <div className="bg-navy relative z-10 -mt-10 pt-20 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
         <CountdownTimer />
