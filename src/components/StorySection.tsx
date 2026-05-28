@@ -19,7 +19,7 @@ export default function StorySection() {
         <div className="w-full md:w-1/2">
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10">
             <Image 
-              src="/house.png" 
+              src="/house.jpeg" 
               alt="Our New Home" 
               fill 
               className="object-cover"
@@ -45,7 +45,7 @@ export default function StorySection() {
         <div className="w-full md:w-1/2">
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10">
             <Image 
-              src="/family.png" 
+              src="/family.jpeg" 
               alt="Our Family" 
               fill 
               className="object-cover"
@@ -98,7 +98,7 @@ export default function StorySection() {
 
         <div className="flex flex-col items-center">
           <a 
-            href="https://maps.google.com/?q=Our+New+Home" 
+            href="https://maps.app.goo.gl/ZtBTpfrNJHyzQKDj8" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gold text-navy font-medium rounded-full overflow-hidden transition-transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]"

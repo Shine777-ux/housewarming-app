@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createEvent } from 'ics';
 
-export async function GET() {
+export async function GET(): Promise<Response> {
   const event = {
     start: [2026, 6, 7, 12, 15] as [number, number, number, number, number],
     duration: { hours: 4, minutes: 0 },
@@ -19,7 +19,7 @@ export async function GET() {
     ]
   };
 
-  return new Promise((resolve, reject) => {
+  return new Promise<Response>((resolve, reject) => {
     // @ts-ignore - ics types are slightly mismatched for some reason
     createEvent(event, (error, value) => {
       if (error) {
