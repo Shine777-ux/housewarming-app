@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import CountdownTimer from "@/components/CountdownTimer";
 import StorySection from "@/components/StorySection";
-import RSVPForm from "@/components/RSVPForm";
 import Guestbook from "@/components/Guestbook";
 import CalendarIntegration from "@/components/CalendarIntegration";
 
@@ -14,7 +13,6 @@ export default function Home() {
         <CountdownTimer />
         <CalendarIntegration />
         <StorySection />
-        <RSVPForm />
         <Guestbook />
       </div>
       
