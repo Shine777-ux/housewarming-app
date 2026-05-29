@@ -1,8 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import CountdownTimer from "@/components/CountdownTimer";
 import StorySection from "@/components/StorySection";
-import RSVPForm from "@/components/RSVPForm";
-import Guestbook from "@/components/Guestbook";
 import CalendarIntegration from "@/components/CalendarIntegration";
 
 interface PageProps {
@@ -23,8 +21,6 @@ export default async function InvitePage({ params }: PageProps) {
         <CountdownTimer />
         <CalendarIntegration />
         <StorySection />
-        <RSVPForm />
-        <Guestbook />
       </div>
       
       <footer className="py-8 text-center text-gray-500 font-light text-sm border-t border-white/5 bg-navy">
